@@ -1,6 +1,13 @@
 import Link from "next/link";
 import { MaterialIcon } from "@/components/MaterialIcon";
-import { SITE_NAME, SOCIAL_LINKS } from "@/lib/constants";
+import {
+  CONTACT_ADDRESS,
+  CONTACT_MAPS_URL,
+  CONTACT_PHONE,
+  CONTACT_PHONE_DISPLAY,
+  SITE_NAME,
+  SOCIAL_LINKS,
+} from "@/lib/constants";
 
 export function Footer() {
   return (
@@ -21,17 +28,22 @@ export function Footer() {
             yeniden çizin.
           </p>
           <div className="flex flex-col gap-stack-sm font-label-sm text-label-sm text-on-surface-variant">
-            <div className="flex items-center gap-3">
-              <MaterialIcon name="location_on" className="text-primary" />
-              <span>
-                Bahçeşehir 2. Kısım Mah. Mercedes Bulvarı Flora Avm. No:30/B-AA
-                Başakşehir / İSTANBUL
-              </span>
-            </div>
-            <div className="mt-2 flex items-center gap-3">
-              <MaterialIcon name="call" className="text-primary" />
-              <span>0534 894 81 38</span>
-            </div>
+            <a
+              href={CONTACT_MAPS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex cursor-pointer items-center gap-3 text-on-surface-variant transition-colors duration-300 hover:text-primary"
+            >
+              <MaterialIcon name="location_on" className="shrink-0" />
+              <span>{CONTACT_ADDRESS}</span>
+            </a>
+            <a
+              href={`tel:${CONTACT_PHONE}`}
+              className="group mt-2 flex cursor-pointer items-center gap-3 text-on-surface-variant transition-colors duration-300 hover:text-primary"
+            >
+              <MaterialIcon name="call" className="shrink-0" />
+              <span>{CONTACT_PHONE_DISPLAY}</span>
+            </a>
             <div className="mt-2 flex items-center gap-3">
               <MaterialIcon name="mail" className="text-primary" />
               <span>info@matgaraj.com</span>

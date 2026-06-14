@@ -1,6 +1,15 @@
 export const SITE_NAME = "Mat Garaj";
 export const BRAND_LOGO_SRC = "/mat_garaj_logo.png";
+export const INSTAGRAM_ICON_SRC =
+  "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/instagram-white-icon.png";
 export const BRAND_RED = "#eb1c24";
+
+export const CONTACT_ADDRESS =
+  "Bahçeşehir 2. Kısım Mah. Mercedes Bulvarı Flora Avm. No:30/B-AA Başakşehir / İSTANBUL";
+export const CONTACT_MAPS_URL =
+  "https://www.google.com/maps/search/?api=1&query=Mat+Garaj+Bahçeşehir+2.+Kısım+Mah.+Mercedes+Bulvarı+Flora+AVM+No:30/B-AA+Başakşehir+İstanbul";
+export const CONTACT_PHONE = "+905348948138";
+export const CONTACT_PHONE_DISPLAY = "0534 894 81 38";
 
 export const NAV_LINKS = [
   { label: "Ana Sayfa", href: "#hero" },
