@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mat Garaj | Kreatif Araç Kaplama ve Tasarım</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "outline": "#99907c",
+                      "surface-container-lowest": "#0c0f0f",
+                      "on-tertiary-container": "#454546",
+                      "on-secondary": "#00363a",
+                      "on-surface-variant": "#d0c5af",
+                      "secondary-fixed-dim": "#00dbe9",
+                      "on-tertiary-fixed-variant": "#474647",
+                      "tertiary-fixed-dim": "#c8c6c7",
+                      "surface-variant": "#333535",
+                      "surface-container-high": "#282a2b",
+                      "inverse-surface": "#e2e2e2",
+                      "surface-tint": "#e9c349",
+                      "on-primary-container": "#554300",
+                      "on-tertiary-fixed": "#1c1b1c",
+                      "on-secondary-fixed": "#002022",
+                      "on-background": "#e2e2e2",
+                      "inverse-on-surface": "#2f3131",
+                      "surface-dim": "#121414",
+                      "surface-container": "#1e2020",
+                      "secondary-container": "#00eefc",
+                      "on-tertiary": "#313031",
+                      "error": "#ffb4ab",
+                      "primary": "#f2ca50",
+                      "surface-bright": "#38393a",
+                      "on-primary-fixed": "#241a00",
+                      "on-primary-fixed-variant": "#574500",
+                      "on-error-container": "#ffdad6",
+                      "tertiary": "#d0cecf",
+                      "tertiary-fixed": "#e5e2e3",
+                      "on-error": "#690005",
+                      "surface-container-highest": "#333535",
+                      "on-primary": "#3c2f00",
+                      "secondary": "#d3fbff",
+                      "inverse-primary": "#735c00",
+                      "primary-fixed-dim": "#e9c349",
+                      "surface": "#121414",
+                      "primary-container": "#d4af37",
+                      "on-surface": "#e2e2e2",
+                      "error-container": "#93000a",
+                      "surface-container-low": "#1a1c1c",
+                      "outline-variant": "#4d4635",
+                      "tertiary-container": "#b5b2b3",
+                      "primary-fixed": "#ffe088",
+                      "on-secondary-fixed-variant": "#004f54",
+                      "on-secondary-container": "#00686f",
+                      "secondary-fixed": "#7df4ff",
+                      "background": "#121414"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-gap": "160px",
+                      "margin-mobile": "20px",
+                      "stack-md": "16px",
+                      "container-max": "1440px",
+                      "stack-sm": "8px",
+                      "stack-lg": "32px",
+                      "gutter": "24px",
+                      "margin-desktop": "80px"
+              },
+              "fontFamily": {
+                      "headline-lg-mobile": [
+                              "Inter"
+                      ],
+                      "display-xl": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "label-sm": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-xl": [
+                              "80px",
+                              {
+                                      "lineHeight": "90px",
+                                      "letterSpacing": "-0.04em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "letterSpacing": "0em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+            }
+          }
+        }
+      </script>
+<style>
+        body {
+            background-color: #0B0B0C;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-panel:hover {
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+        .glow-primary:hover {
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+            border-color: #D4AF37;
+        }
+        .marquee-container {
+            display: flex;
+            overflow: hidden;
+            user-select: none;
+            gap: 2rem;
+            mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+        }
+        .marquee-content {
+            display: flex;
+            flex-shrink: 0;
+            justify-content: space-around;
+            min-width: 100%;
+            gap: 2rem;
+            animation: scroll 20s linear infinite;
+        }
+        @keyframes scroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(calc(-100% - 2rem)); }
+        }
+        .btn-gold-border {
+            border: 1px solid #D4AF37;
+            transition: all 0.3s ease;
+        }
+        .btn-gold-border:hover {
+            background: rgba(212, 175, 55, 0.05);
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+        }
+        
+        /* Typography Utilities */
+        .font-display-xl { font-family: 'Inter', sans-serif; font-size: 80px; line-height: 90px; letter-spacing: -0.04em; font-weight: 800; }
+        .text-display-xl { font-size: 80px; line-height: 90px; }
+        .font-headline-lg { font-family: 'Inter', sans-serif; font-size: 48px; line-height: 56px; letter-spacing: -0.02em; font-weight: 700; }
+        .text-headline-lg { font-size: 48px; line-height: 56px; }
+        .font-headline-md { font-family: 'Inter', sans-serif; font-size: 24px; line-height: 32px; font-weight: 600; }
+        .text-headline-md { font-size: 24px; line-height: 32px; }
+        .font-body-lg { font-family: 'Inter', sans-serif; font-size: 18px; line-height: 28px; letter-spacing: 0.01em; font-weight: 400; }
+        .text-body-lg { font-size: 18px; line-height: 28px; }
+        .font-body-md { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 24px; letter-spacing: 0.01em; font-weight: 400; }
+        .text-body-md { font-size: 16px; line-height: 24px; }
+        .font-label-sm { font-family: 'Inter', sans-serif; font-size: 12px; line-height: 16px; letter-spacing: 0.1em; font-weight: 600; text-transform: uppercase; }
+        .text-label-sm { font-size: 12px; line-height: 16px; }
+        
+        @media (max-width: 768px) {
+            .font-headline-lg-mobile { font-family: 'Inter', sans-serif; font-size: 32px; line-height: 40px; letter-spacing: -0.02em; font-weight: 700; }
+            .text-headline-lg-mobile { font-size: 32px; line-height: 40px; }
+        }
+    </style>
+</head>
+<body class="text-on-background antialiased overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar Component -->
+<nav class="fixed top-0 w-full z-50 bg-surface-container-lowest/30 backdrop-blur-xl border-b border-on-surface/10 shadow-[0_0_15px_rgba(233,195,73,0.1)] transition-all duration-500 ease-out">
+<div class="flex justify-between items-center px-margin-desktop py-6 w-full max-w-container-max mx-auto md:px-margin-desktop px-margin-mobile">
+<!-- Brand -->
+<a class="font-display-xl text-headline-md tracking-tighter text-on-surface" href="#">Mat Garaj</a>
+<!-- Desktop Navigation -->
+<ul class="hidden md:flex items-center gap-gutter">
+<li><a class="font-label-sm text-label-sm tracking-widest text-primary border-b-2 border-primary pb-1 hover:glow-primary duration-300" href="#">Ana Sayfa</a></li>
+<li><a class="font-label-sm text-label-sm tracking-widest text-on-surface-variant hover:text-on-surface transition-colors hover:glow-primary duration-300" href="#">Hakkımızda</a></li>
+<li><a class="font-label-sm text-label-sm tracking-widest text-on-surface-variant hover:text-on-surface transition-colors hover:glow-primary duration-300" href="#">Hizmetlerimiz</a></li>
+<li><a class="font-label-sm text-label-sm tracking-widest text-on-surface-variant hover:text-on-surface transition-colors hover:glow-primary duration-300" href="#">Videolar ve İçerikler</a></li>
+<li><a class="font-label-sm text-label-sm tracking-widest text-on-surface-variant hover:text-on-surface transition-colors hover:glow-primary duration-300" href="#">Galeri</a></li>
+<li><a class="font-label-sm text-label-sm tracking-widest text-on-surface-variant hover:text-on-surface transition-colors hover:glow-primary duration-300" href="#">Blog</a></li>
+<li><a class="font-label-sm text-label-sm tracking-widest text-on-surface-variant hover:text-on-surface transition-colors hover:glow-primary duration-300" href="#">İletişim</a></li>
+</ul>
+<!-- CTA -->
+<a class="hidden md:inline-flex items-center justify-center px-6 py-3 font-label-sm text-label-sm btn-gold-border rounded text-primary uppercase tracking-widest" href="#">
+                İletişime Geç
+            </a>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center overflow-hidden">
+<!-- Arka plan videosu: Kendi videonuzun URL'sini aşağıdaki src değerine yapıştırın -->
+<video autoplay="" class="absolute inset-0 w-full h-full object-cover" loop="" muted="" playsinline="" aria-hidden="true">
+<source src="https://cdn.pixabay.com/video/2020/05/25/40130-424930032_large.mp4" type="video/mp4"/>
+</video>
+<!-- Yarı şeffaf overlay — metin okunabilirliği için -->
+<div aria-hidden="true" class="absolute inset-0 bg-black/55 z-[1]"></div>
+<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-desktop md:px-margin-desktop px-margin-mobile pt-32 pb-section-gap">
+<div class="relative max-w-2xl flex flex-col justify-center">
+<div class="absolute -left-20 top-0 w-64 h-64 bg-primary-container rounded-full mix-blend-screen filter blur-[100px] opacity-20 pointer-events-none"></div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-4 block relative">Mat Garaj – 22 Yıllık Tecrübeyle Araç Kaplama, Koruma ve Kişiselleştirmede Uzman!</span>
+<h1 class="font-display-xl text-display-xl text-on-surface mb-stack-lg md:text-display-xl text-headline-lg-mobile relative">
+                    Kreatif Araç Kaplama ve Tasarım Deneyimi
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg max-w-xl relative">
+                    Mat Garaj olarak, aracınızı sadece kaplamıyoruz — karakter kazandırıyoruz. Premium ürünlerle uzun ömürlü, estetik ve profesyonel uygulamalar sunuyoruz.
+                </p>
+<div class="flex flex-wrap gap-stack-md relative">
+<a class="inline-flex items-center justify-center px-8 py-4 font-label-sm text-label-sm btn-gold-border rounded text-primary uppercase tracking-widest bg-surface-container-lowest/50 backdrop-blur-sm" href="#">
+                        Projeleri İncele
+                    </a>
+<a class="inline-flex items-center justify-center px-8 py-4 font-label-sm text-label-sm border border-white/10 rounded text-on-surface uppercase tracking-widest hover:border-white/40 transition-colors bg-surface-container-lowest/50 backdrop-blur-sm" href="#">
+                        Hizmetlerimiz
+                    </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust & Brand Marquee -->
+<section class="py-stack-lg border-y border-white/5 bg-surface-container-lowest/50 backdrop-blur-sm">
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row items-center gap-gutter px-margin-desktop md:px-margin-desktop px-margin-mobile">
+<div class="marquee-container flex-grow py-4 w-full">
+<div class="marquee-content font-headline-md text-headline-md text-on-surface-variant/50">
+<span class="hover:text-on-surface transition-colors cursor-default">Avery</span>
+<span class="hover:text-on-surface transition-colors cursor-default">Carlike</span>
+<span class="hover:text-on-surface transition-colors cursor-default">KPMF</span>
+<span class="hover:text-on-surface transition-colors cursor-default">Teck</span>
+<span class="hover:text-on-surface transition-colors cursor-default">Hexis</span>
+<span class="hover:text-on-surface transition-colors cursor-default">Orafol</span>
+<span class="hover:text-on-surface transition-colors cursor-default">3M</span>
+</div>
+<div aria-hidden="true" class="marquee-content font-headline-md text-headline-md text-on-surface-variant/50">
+<span class="hover:text-on-surface transition-colors cursor-default">Avery</span>
+<span class="hover:text-on-surface transition-colors cursor-default">Carlike</span>
+<span class="hover:text-on-surface transition-colors cursor-default">KPMF</span>
+<span class="hover:text-on-surface transition-colors cursor-default">Teck</span>
+<span class="hover:text-on-surface transition-colors cursor-default">Hexis</span>
+<span class="hover:text-on-surface transition-colors cursor-default">Orafol</span>
+<span class="hover:text-on-surface transition-colors cursor-default">3M</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Grid -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto md:px-margin-desktop px-margin-mobile">
+<div class="mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-on-surface md:text-headline-lg text-headline-lg-mobile">Hizmetlerimiz</h2>
+<div class="w-24 h-1 bg-primary mt-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Service Card 1 -->
+<div class="glass-panel rounded-xl p-8 flex flex-col group transition-all duration-500 hover:-translate-y-2 glow-primary relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-30 transition-opacity">
+<span class="material-symbols-outlined text-6xl text-primary" style="font-variation-settings: 'FILL' 0;">layers</span>
+</div>
+<div class="mb-6">
+<span class="material-symbols-outlined text-3xl text-primary" style="font-variation-settings: 'FILL' 1;">layers</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">ARAÇ KAPLAMA</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
+                    Mat, parlak, saten, fırçalanmış metal ve renk değişimi kaplamalar.
+                </p>
+</div>
+<!-- Service Card 2 -->
+<div class="glass-panel rounded-xl p-8 flex flex-col group transition-all duration-500 hover:-translate-y-2 glow-primary relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-30 transition-opacity">
+<span class="material-symbols-outlined text-6xl text-primary" style="font-variation-settings: 'FILL' 0;">local_shipping</span>
+</div>
+<div class="mb-6">
+<span class="material-symbols-outlined text-3xl text-primary" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">ARAÇ REKLAM GİYTİRME</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
+                    Filo veya tekil araçlar için etkileyici reklam giydirme tasarımları.
+                </p>
+</div>
+<!-- Service Card 3 -->
+<div class="glass-panel rounded-xl p-8 flex flex-col group transition-all duration-500 hover:-translate-y-2 glow-primary relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-30 transition-opacity">
+<span class="material-symbols-outlined text-6xl text-primary" style="font-variation-settings: 'FILL' 0;">business</span>
+</div>
+<div class="mb-6">
+<span class="material-symbols-outlined text-3xl text-primary" style="font-variation-settings: 'FILL' 1;">business</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">BİNA CAM FİLMLERİ</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
+                    Güneş kontrolü, ısı yalıtımı ve mahremiyet sağlayan bina cam filmleri.
+                </p>
+</div>
+<!-- Service Card 4 -->
+<div class="glass-panel rounded-xl p-8 flex flex-col group transition-all duration-500 hover:-translate-y-2 glow-primary relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-30 transition-opacity">
+<span class="material-symbols-outlined text-6xl text-primary" style="font-variation-settings: 'FILL' 0;">security</span>
+</div>
+<div class="mb-6">
+<span class="material-symbols-outlined text-3xl text-primary" style="font-variation-settings: 'FILL' 1;">security</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">GÜVENLİK CAM FİLMİ</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
+                    Darbe ve kırılmaya dayanıklı, sertifikalı güvenlik cam filmleri.
+                </p>
+</div>
+<!-- Service Card 5 -->
+<div class="glass-panel rounded-xl p-8 flex flex-col group transition-all duration-500 hover:-translate-y-2 glow-primary relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-30 transition-opacity">
+<span class="material-symbols-outlined text-6xl text-primary" style="font-variation-settings: 'FILL' 0;">diamond</span>
+</div>
+<div class="mb-6">
+<span class="material-symbols-outlined text-3xl text-primary" style="font-variation-settings: 'FILL' 1;">diamond</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">REFLEKTİF ÜRÜNLER &amp; LOGOLAR</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
+                    Gece görünürlüğü yüksek reflektif ürünler ve özel logolar.
+                </p>
+</div>
+<!-- Service Card 6 -->
+<div class="glass-panel rounded-xl p-8 flex flex-col group transition-all duration-500 hover:-translate-y-2 glow-primary relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-30 transition-opacity">
+<span class="material-symbols-outlined text-6xl text-primary" style="font-variation-settings: 'FILL' 0;">directions_car</span>
+</div>
+<div class="mb-6">
+<span class="material-symbols-outlined text-3xl text-primary" style="font-variation-settings: 'FILL' 1;">directions_car</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">ARAÇ CAM FİLMLERİ</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
+                    UV/ısı koruması ve konfor için profesyonel araç cam filmleri.
+                </p>
+</div>
+</div>
+</section>
+<!-- Value Proposition Section -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto md:px-margin-desktop px-margin-mobile bg-surface-container-lowest/50 border-y border-white/5">
+<div class="mb-stack-lg text-center">
+<h2 class="font-headline-lg text-headline-lg text-on-surface md:text-headline-lg text-headline-lg-mobile">Neden Biz?</h2>
+<div class="w-24 h-1 bg-primary mt-4 mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="text-center p-6">
+<div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-6">
+<span class="material-symbols-outlined text-3xl text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Usta İşçilik</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Eğitimli ekibimizle OEM standartlarında montaj ve kusursuz uygulama.
+                </p>
+</div>
+<div class="text-center p-6">
+<div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-6">
+<span class="material-symbols-outlined text-3xl text-primary" style="font-variation-settings: 'FILL' 1;">payments</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Şeffaf Fiyatlandırma</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Sürpriz yok: Net teklif, net kapsam ve hızlı planlama.
+                </p>
+</div>
+<div class="text-center p-6">
+<div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-6">
+<span class="material-symbols-outlined text-3xl text-primary" style="font-variation-settings: 'FILL' 1;">support_agent</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Garanti ve Destek</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Uygulama sonrası bakım önerileri ve garanti kapsamıyla yanınızdayız.
+                </p>
+</div>
+</div>
+</section>
+<!-- Video Hub & Gallery -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto md:px-margin-desktop px-margin-mobile">
+<div class="mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-on-surface md:text-headline-lg text-headline-lg-mobile">Videolar ve İçerikler</h2>
+<div class="w-24 h-1 bg-primary mt-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Video Card 1 -->
+<div class="glass-panel rounded-xl overflow-hidden group cursor-pointer">
+<div class="relative aspect-video bg-black/50 flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-white/70 group-hover:text-primary transition-colors" style="font-variation-settings: 'FILL' 0;">play_circle</span>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80"></div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 group-hover:text-primary transition-colors">Mat Garaj'da Ferrari 296 GTB'ye Özel Tasarım | Sarı Şerit</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Ferrari 296 GTB'ye Mat Garaj'da kişiye özel sarı şerit tasarımı ve detaylı uygulama.
+                </p>
+</div>
+</div>
+<!-- Video Card 2 -->
+<div class="glass-panel rounded-xl overflow-hidden group cursor-pointer">
+<div class="relative aspect-video bg-black/50 flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-white/70 group-hover:text-primary transition-colors" style="font-variation-settings: 'FILL' 0;">play_circle</span>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80"></div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 group-hover:text-primary transition-colors">Türkiye'nin Tek Mat Siyah Bentley'i! | Kaplamanın Tüm Detayları</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Türkiye'de tek olan mat siyah Bentley Bentayga'nın Mat Garaj'daki değişim ve kaplama süreci.
+                </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer Component -->
+<footer class="relative w-full py-section-gap bg-surface-container-lowest/80 backdrop-blur-2xl border-t border-white/5">
+<div class="grid grid-cols-12 gap-gutter px-margin-desktop max-w-container-max mx-auto md:px-margin-desktop px-margin-mobile">
+<!-- Brand & Contact Info -->
+<div class="col-span-12 lg:col-span-4 flex flex-col gap-stack-lg mb-12 lg:mb-0">
+<a class="font-headline-md text-headline-md text-primary" href="#">Mat Garaj</a>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+                    Kusursuz işçilik ve premium malzemelerle aracınızın sınırlarını yeniden çizin.
+                </p>
+<div class="flex flex-col gap-stack-sm font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 0;">location_on</span>
+<span>Bahçeşehir 2. Kısım Mah. Mercedes Bulvarı Flora Avm. No:30/B-AA Başakşehir / İSTANBUL</span>
+</div>
+<div class="flex items-center gap-3 mt-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 0;">call</span>
+<span>0534 894 81 38</span>
+</div>
+<div class="flex items-center gap-3 mt-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 0;">mail</span>
+<span>info@matgaraj.com</span>
+</div>
+<div class="flex flex-col gap-1 mt-2">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 0;">schedule</span>
+<span>Hafta içi: 08:30 - 19:00</span>
+</div>
+<div class="flex items-center gap-3 pl-9">
+<span>Cumartesi: 08:30 - 19:00</span>
+</div>
+<div class="flex items-center gap-3 pl-9">
+<span>Pazar: Kapalı</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Minimalist Glass Contact Form -->
+<div class="col-span-12 lg:col-span-8 lg:pl-12">
+<div class="glass-panel p-8 rounded-xl">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-6">Projenizi Konuşalım</h3>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+<div class="col-span-1 md:col-span-2">
+<input class="w-full bg-transparent border-0 border-b border-white/20 text-on-surface font-body-md text-body-md focus:ring-0 focus:border-secondary transition-colors py-3 placeholder:text-on-surface-variant/50" placeholder="Adınız Soyadınız" type="text"/>
+</div>
+<div>
+<input class="w-full bg-transparent border-0 border-b border-white/20 text-on-surface font-body-md text-body-md focus:ring-0 focus:border-secondary transition-colors py-3 placeholder:text-on-surface-variant/50" placeholder="Telefon Numaranız" type="tel"/>
+</div>
+<div>
+<input class="w-full bg-transparent border-0 border-b border-white/20 text-on-surface font-body-md text-body-md focus:ring-0 focus:border-secondary transition-colors py-3 placeholder:text-on-surface-variant/50" placeholder="E-posta Adresiniz" type="email"/>
+</div>
+<div class="col-span-1 md:col-span-2 mt-4">
+<button class="w-full inline-flex items-center justify-center px-6 py-4 font-label-sm text-label-sm btn-gold-border rounded text-primary uppercase tracking-widest bg-black/20" type="button">
+                                Gönder
+                            </button>
+</div>
+</form>
+</div>
+</div>
+<!-- Copyright and Socials -->
+<div class="col-span-12 mt-section-gap pt-stack-lg border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-stack-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">© 2024 Mat Garaj. Tüm Hakları Saklıdır.</span>
+<div class="flex gap-4">
+<a class="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center" href="#" title="Instagram">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">photo_camera</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center" href="#" title="YouTube">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">smart_display</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center" href="#" title="TikTok">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">music_note</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center" href="#" title="Facebook">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">thumb_up</span>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

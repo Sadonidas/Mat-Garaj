@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mat Garaj
 
-## Getting Started
+Mat Garaj web sitesi — Next.js App Router, React 19, Tailwind CSS v4.
 
-First, run the development server:
+## Geliştirme
 
 ```bash
+npm install
+cp .env.example .env.local   # isteğe bağlı — Blob URL hazır olunca doldurun
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Tarayıcıda: [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Üretim
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Proje yapısı
 
-To learn more about Next.js, take a look at the following resources:
+- `src/app/` — layout, ana sayfa, global stiller
+- `src/components/` — Navbar, Hero, Services, Footer vb.
+- `src/lib/constants.ts` — navigasyon, hizmetler, içerik
+- `src/lib/media.ts` — hero video URL (Vercel Blob env)
+- `legacy/code.html` — önceki statik HTML sürümü
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Hero videosu — Vercel Blob
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Site, hero arka plan videosunu **Vercel Blob public URL** üzerinden okur.
 
-## Deploy on Vercel
+### 1. Vercel projesini oluştur
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. [vercel.com](https://vercel.com) → bu repo'yu import edin
+2. **Storage** → **Blob** → store oluşturun (projeye bağlayın)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 2. Videoyu Blob'a yükleyin
+
+Dashboard'dan yükleyebilir veya CLI kullanabilirsiniz:
+
+```bash
+npx vercel blob upload ./hero.mp4 --pathname hero/mat-garaj-hero.mp4
+```
+
+Yükleme sonrası size şuna benzer bir **public URL** verilir:
+
+`https://xxxxx.public.blob.vercel-storage.com/hero/mat-garaj-hero.mp4`
+
+### 3. Ortam değişkenini ayarlayın
+
+| Ortam | Değişken | Değer |
+|-------|----------|-------|
+| Yerel | `.env.local` | `NEXT_PUBLIC_HERO_VIDEO_URL=<blob-public-url>` |
+| Vercel | Project → Settings → Environment Variables | Aynı değişken ve URL |
+
+`.env.example` dosyasını şablon olarak kullanın.
+
+### 4. Deploy
+
+Env değişkeni eklendikten sonra yeniden deploy edin. Değişken tanımlı değilse geçici olarak Pixabay yedek videosu oynatılır.
+
+**Not:** Hero oynatmak için yalnızca public Blob URL yeterlidir. `BLOB_READ_WRITE_TOKEN` yalnızca programatik yükleme/API için gereklidir.
