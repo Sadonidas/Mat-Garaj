@@ -1,13 +1,14 @@
 export const SITE_NAME = "Mat Garaj";
+export const BRAND_LOGO_SRC = "/mat_garaj_logo.png";
+export const BRAND_RED = "#eb1c24";
 
 export const NAV_LINKS = [
   { label: "Ana Sayfa", href: "#hero" },
-  { label: "Hakkımızda", href: "#hakkimizda" },
-  { label: "Hizmetlerimiz", href: "#hizmetlerimiz" },
-  { label: "Videolar ve İçerikler", href: "#videolar" },
   { label: "Galeri", href: "#galeri" },
-  { label: "Google Yorumları", href: "#google-yorumlari" },
-  { label: "İletişim", href: "#iletisim" },
+  { label: "Hizmetlerimiz", href: "#hizmetlerimiz" },
+  { label: "Hakkımızda", href: "#hakkimizda" },
+  { label: "Videolar ve İçerikler", href: "#videolar" },
+  { label: "Google Yorumları", href: "#yorumlar" },
 ] as const;
 
 export const BRAND_NAMES = [
@@ -80,15 +81,21 @@ export const WHY_US = [
 
 export const VIDEOS = [
   {
+    id: "ferrari-296-gtb-youtube",
     title:
       "Mat Garaj'da Ferrari 296 GTB'ye Özel Tasarım | Sarı Şerit",
     description:
       "Ferrari 296 GTB'ye Mat Garaj'da kişiye özel sarı şerit tasarımı ve detaylı uygulama.",
+    youtubeUrl: "https://www.youtube.com/watch?v=59-K58sg6Dg",
+    thumbnailUrl: "https://img.youtube.com/vi/59-K58sg6Dg/maxresdefault.jpg",
   },
   {
+    id: "bentley-mat-siyah-youtube",
     title: "Türkiye'nin Tek Mat Siyah Bentley'i! | Kaplamanın Tüm Detayları",
     description:
       "Türkiye'de tek olan mat siyah Bentley Bentayga'nın Mat Garaj'daki değişim ve kaplama süreci.",
+    youtubeUrl: "https://www.youtube.com/watch?v=AhUfgfIkSy8",
+    thumbnailUrl: "https://img.youtube.com/vi/AhUfgfIkSy8/maxresdefault.jpg",
   },
 ] as const;
 
@@ -103,26 +110,32 @@ export const GALLERY_ITEMS = [
   {
     id: "bentley-bentayga-mat-siyah",
     title: "Mat Siyah Bentley Bentayga | Kaplama Detayları",
-    coverImage:
-      "https://images.unsplash.com/photo-1563720360172-824a3515a014?w=800&q=80",
-    // Instagram reel/post URL — gerçek linkinizi buraya yapıştırın
-    instagramUrl: "#",
+    coverImage: "/gallery/bentley-bentayga-mat-siyah.jpg",
+    instagramUrl: "https://www.instagram.com/p/DHJYvEEMOGf/",
   },
   {
     id: "ferrari-ozel-kaplama",
     title: "Ferrari Özel Kaplama | Mat Garaj Stüdyo",
-    coverImage:
-      "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80",
-    // Instagram reel/post URL — gerçek linkinizi buraya yapıştırın
-    instagramUrl: "#",
+    coverImage: "/gallery/ferrari-ozel-kaplama.jpg",
+    instagramUrl: "https://www.instagram.com/p/DIEz2YSsiVY/",
   },
   {
     id: "bentley-luxury-finish",
     title: "Bentley Premium Finish | Tam Uygulama",
-    coverImage:
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80",
-    // Instagram reel/post URL — gerçek linkinizi buraya yapıştırın
-    instagramUrl: "#",
+    coverImage: "/gallery/bentley-premium-finish.jpg",
+    instagramUrl: "https://www.instagram.com/p/DDykpaEofbg/",
+  },
+  {
+    id: "porsche-911-gt3rs-ppf",
+    title: "Porsche 911 GT3 RS Şeffaf Koruma (PPF) Uygulaması",
+    coverImage: "/gallery/porsche-911-gt3rs-ppf.jpg",
+    instagramUrl: "https://www.instagram.com/p/DLDYd1ss3xh/",
+  },
+  {
+    id: "bmw-m5-competition-ppf",
+    title: "BMW M5 Competition (PPF) Kaplama",
+    coverImage: "/gallery/bmw-m5-competition-ppf.jpg",
+    instagramUrl: "https://www.instagram.com/p/DNQNFNDoezw/?img_index=1",
   },
 ] as const;
 
@@ -154,6 +167,13 @@ export const GOOGLE_REVIEWS = [
     date: "5 ay önce",
     rating: 5,
     text: "Cam filmi ve kaplama işlemlerim kusursuz tamamlandı. Detaylara gösterilen özen gerçekten fark yaratıyor.",
+  },
+  {
+    id: "review-4",
+    author: "Selin A.",
+    date: "1 ay önce",
+    rating: 5,
+    text: "Ferrari kaplama sürecim boyunca her adımda bilgilendirildim. Sonuç beklentimin çok üzerinde, teşekkürler Mat Garaj.",
   },
 ] as const;
 

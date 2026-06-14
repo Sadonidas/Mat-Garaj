@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme inline {
+  --color-brand-red: #eb1c24;
   --color-outline: #99907c;
   --color-surface-container-lowest: #0c0f0f;
   --color-on-tertiary-container: #454546;
@@ -12,8 +13,8 @@
   --color-surface-variant: #333535;
   --color-surface-container-high: #282a2b;
   --color-inverse-surface: #e2e2e2;
-  --color-surface-tint: #e9c349;
-  --color-on-primary-container: #554300;
+  --color-surface-tint: #eb1c24;
+  --color-on-primary-container: #ffffff;
   --color-on-tertiary-fixed: #1c1b1c;
   --color-on-secondary-fixed: #002022;
   --color-on-background: #e2e2e2;
@@ -23,27 +24,27 @@
   --color-secondary-container: #00eefc;
   --color-on-tertiary: #313031;
   --color-error: #ffb4ab;
-  --color-primary: #f2ca50;
+  --color-primary: #eb1c24;
   --color-surface-bright: #38393a;
-  --color-on-primary-fixed: #241a00;
-  --color-on-primary-fixed-variant: #574500;
+  --color-on-primary-fixed: #ffffff;
+  --color-on-primary-fixed-variant: #ffcace;
   --color-on-error-container: #ffdad6;
   --color-tertiary: #d0cecf;
   --color-tertiary-fixed: #e5e2e3;
   --color-on-error: #690005;
   --color-surface-container-highest: #333535;
-  --color-on-primary: #3c2f00;
+  --color-on-primary: #ffffff;
   --color-secondary: #d3fbff;
-  --color-inverse-primary: #735c00;
-  --color-primary-fixed-dim: #e9c349;
+  --color-inverse-primary: #eb1c24;
+  --color-primary-fixed-dim: #eb1c24;
   --color-surface: #121414;
-  --color-primary-container: #d4af37;
+  --color-primary-container: #c9161d;
   --color-on-surface: #e2e2e2;
   --color-error-container: #93000a;
   --color-surface-container-low: #1a1c1c;
   --color-outline-variant: #4d4635;
   --color-tertiary-container: #b5b2b3;
-  --color-primary-fixed: #ffe088;
+  --color-primary-fixed: #ff6b71;
   --color-on-secondary-fixed-variant: #004f54;
   --color-on-secondary-container: #00686f;
   --color-secondary-fixed: #7df4ff;
@@ -78,8 +79,8 @@ body {
 }
 
 .glow-primary:hover {
-  box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
-  border-color: #d4af37;
+  box-shadow: 0 0 15px rgba(235, 28, 36, 0.35);
+  border-color: #eb1c24;
 }
 
 .marquee-container {
@@ -109,13 +110,13 @@ body {
 }
 
 .btn-gold-border {
-  border: 1px solid #d4af37;
+  border: 1px solid #eb1c24;
   transition: all 0.3s ease;
 }
 
 .btn-gold-border:hover {
-  background: rgba(212, 175, 55, 0.05);
-  box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+  background: rgba(235, 28, 36, 0.08);
+  box-shadow: 0 0 15px rgba(235, 28, 36, 0.35);
 }
 
 .font-display-xl {

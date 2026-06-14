@@ -25,7 +25,7 @@ export function Gallery() {
             aria-label={`${item.title} — Instagram'da aç`}
             className="group block"
           >
-            <div className="relative aspect-[4/5] overflow-hidden rounded-xl border border-white/10 transition-all duration-500 ease-out group-hover:border-primary group-hover:shadow-[0_0_24px_rgba(212,175,55,0.35)]">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-xl border border-white/10 transition-all duration-500 ease-out group-hover:border-primary group-hover:shadow-[0_0_24px_rgba(235,28,36,0.35)]">
               <Image
                 src={item.coverImage}
                 alt={item.title}

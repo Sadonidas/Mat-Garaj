@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import { MaterialIcon } from "@/components/MaterialIcon";
 import { VIDEOS } from "@/lib/constants";
 
@@ -16,15 +18,28 @@ export function VideoHub() {
 
       <div className="grid grid-cols-1 gap-gutter md:grid-cols-2">
         {VIDEOS.map((video) => (
-          <div
-            key={video.title}
-            className="glass-panel group cursor-pointer overflow-hidden rounded-xl"
+          <Link
+            key={video.id}
+            href={video.youtubeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`${video.title} — YouTube'da aç`}
+            className="glass-panel group block cursor-pointer overflow-hidden rounded-xl"
           >
-            <div className="relative flex aspect-video items-center justify-center bg-black/50">
-              <MaterialIcon
-                name="play_circle"
-                className="text-6xl text-white/70 transition-colors group-hover:text-primary"
+            <div className="relative aspect-video overflow-hidden bg-black/50">
+              <Image
+                src={video.thumbnailUrl}
+                alt={video.title}
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
               />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <MaterialIcon
+                  name="play_circle"
+                  className="text-6xl text-white/70 transition-colors group-hover:text-primary"
+                />
+              </div>
               <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80" />
             </div>
             <div className="p-6">
@@ -35,7 +50,7 @@ export function VideoHub() {
                 {video.description}
               </p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>

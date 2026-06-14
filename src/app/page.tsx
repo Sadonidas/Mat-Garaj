@@ -1,10 +1,10 @@
-import { GoogleReviews } from "@/components/GoogleReviews";
 import { BrandMarquee } from "@/components/BrandMarquee";
 import { Footer } from "@/components/Footer";
+import { Gallery } from "@/components/Gallery";
+import { GoogleReviews } from "@/components/GoogleReviews";
 import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
 import { Services } from "@/components/Services";
-import { Gallery } from "@/components/Gallery";
 import { VideoHub } from "@/components/VideoHub";
 import { WhyUs } from "@/components/WhyUs";
 
@@ -15,10 +15,10 @@ export default function Home() {
       <main>
         <Hero />
         <BrandMarquee />
-        <WhyUs />
-        <Services />
-        <VideoHub />
         <Gallery />
+        <Services />
+        <WhyUs />
+        <VideoHub />
         <GoogleReviews />
       </main>
       <Footer />

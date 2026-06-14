@@ -21,7 +21,7 @@ function StarRating({ rating }: { rating: number }) {
 export function GoogleReviews() {
   return (
     <section
-      id="google-yorumlari"
+      id="yorumlar"
       className="mx-auto max-w-container-max scroll-mt-24 border-y border-white/5 bg-surface-container-lowest/50 px-margin-mobile py-section-gap md:px-margin-desktop"
     >
       <div className="mb-stack-lg text-center">
