@@ -7,11 +7,11 @@
  * Yerel geliştirme: .env.local dosyasına aynı değişkeni ekleyin.
  * Vercel deploy: Project → Settings → Environment Variables
  */
-const FALLBACK_HERO_VIDEO_SRC =
-  "https://cdn.pixabay.com/video/2020/05/25/40130-424930032_large.mp4";
+const DEFAULT_HERO_VIDEO_SRC =
+  "https://oz2qbphhtsdwjf0m.public.blob.vercel-storage.com/IMG_1734.MP4";
 
 export const HERO_VIDEO_SRC =
-  process.env.NEXT_PUBLIC_HERO_VIDEO_URL?.trim() || FALLBACK_HERO_VIDEO_SRC;
+  process.env.NEXT_PUBLIC_HERO_VIDEO_URL?.trim() || DEFAULT_HERO_VIDEO_SRC;
 
 export const IS_HERO_VIDEO_FROM_BLOB = Boolean(
   process.env.NEXT_PUBLIC_HERO_VIDEO_URL?.trim(),

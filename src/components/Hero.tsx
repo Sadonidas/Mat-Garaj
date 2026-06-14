@@ -7,17 +7,16 @@ export function Hero() {
       id="hero"
       className="relative flex min-h-screen scroll-mt-24 items-center overflow-hidden"
     >
-      {/* Arka plan videosu: Vercel Blob URL → NEXT_PUBLIC_HERO_VIDEO_URL (.env.local / Vercel env) */}
+      {/* Arka plan videosu: src/lib/media.ts veya NEXT_PUBLIC_HERO_VIDEO_URL */}
       <video
+        src={HERO_VIDEO_SRC}
         autoPlay
         className="absolute inset-0 h-full w-full object-cover"
         loop
         muted
         playsInline
         aria-hidden="true"
-      >
-        <source src={HERO_VIDEO_SRC} type="video/mp4" />
-      </video>
+      />
 
       <div
         aria-hidden="true"

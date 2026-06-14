@@ -97,9 +97,8 @@ export const GALLERY_ITEMS = [
     id: "ferrari-296-gtb-sari-serit",
     title: "Ferrari 296 GTB | Sarı Şerit Tasarım",
     coverImage:
-      "https://images.unsplash.com/photo-1583121274602-3e2820c50fa8?w=800&q=80",
-    // Instagram reel/post URL — gerçek linkinizi buraya yapıştırın
-    instagramUrl: "#",
+      "https://oz2qbphhtsdwjf0m.public.blob.vercel-storage.com/sari-cizgi.jpg",
+    instagramUrl: "https://www.instagram.com/reel/DJE9_N0sR8O/",
   },
   {
     id: "bentley-bentayga-mat-siyah",

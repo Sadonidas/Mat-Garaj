@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { MaterialIcon } from "@/components/MaterialIcon";
 import { GALLERY_ITEMS } from "@/lib/constants";
 
 export function Gallery() {
@@ -35,15 +34,6 @@ export function Gallery() {
                 className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/10 transition-colors duration-500 group-hover:via-black/30" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full border border-primary/40 bg-black/45 shadow-[0_0_20px_rgba(0,0,0,0.45)] backdrop-blur-md transition-all duration-500 group-hover:scale-110 group-hover:border-primary group-hover:bg-black/55 group-hover:shadow-[0_0_20px_rgba(212,175,55,0.4)]">
-                  <MaterialIcon
-                    name="play_arrow"
-                    filled
-                    className="ml-1 text-3xl text-primary"
-                  />
-                </div>
-              </div>
             </div>
             <h3 className="mt-4 font-headline-md text-headline-md text-on-surface transition-colors duration-300 group-hover:text-primary">
               {item.title}
