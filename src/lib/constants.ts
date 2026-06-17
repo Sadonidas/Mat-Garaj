@@ -39,7 +39,7 @@ export const SERVICES = [
   },
   {
     icon: "local_shipping",
-    title: "ARAÇ REKLAM GİYTİRME",
+    title: "ARAÇ REKLAM GİYDİRME",
     description:
       "Filo veya tekil araçlar için etkileyici reklam giydirme tasarımları.",
   },
